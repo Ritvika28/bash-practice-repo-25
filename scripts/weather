@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # TODO: Display weather of IIIT, Lucknow
-#!/bin/bash
+curl -s "wttr.in/26.800484,81.024052?2"
 
 
 
