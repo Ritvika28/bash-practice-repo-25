@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-# Extract the wifi username (SSID)
-# Refer: "iw dev wlan0 link" command output for this
-
 wifi_ssid=$(networksetup -getairportnetwork en0 | awk -F': ' '{print $2}')
 
 if [ -z "$wifi_ssid" ] || [ "$wifi_ssid" == "Wi-Fi power is off" ]; then
@@ -10,3 +7,4 @@ if [ -z "$wifi_ssid" ] || [ "$wifi_ssid" == "Wi-Fi power is off" ]; then
 else
     echo "Connected to Wi-Fi: $wifi_ssid"
 fi
+
