@@ -3,10 +3,5 @@
 # TODO: Display weather of IIIT, Lucknow
 #!/bin/bash
 
-# Set the location to IIIT Lucknow
-LOCATION="IIIT Lucknow"
-
-# Fetch and display weather using curl
-curl -s "wttr.in/26.800484,81.024052?2"
 
 
